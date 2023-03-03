@@ -1,4 +1,4 @@
-import { Avatar, Button, IconButton } from '@mui/material';
+import { Avatar, Button, IconButton, Menu, MenuItem } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -32,17 +32,46 @@ function Sidebar() {
       chat.data().users.find((user) => user === recipientEmail)?.length > 0
       );
 
+      //MUI Default DROPDOWN CODE
+      const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  //End MUI default DROPDOWN CODE
+
   return (
     <Container>
       <Header>
-        <UserAvatar src={user.photoURL} onClick={() => auth.signOut()} />
+        <UserAvatar src={user.photoURL} />
         <IconContainer>
             <IconButton>
                 <ChatIcon />
             </IconButton>
             <IconButton>
-                <MoreVertIcon />
+                <MoreVertIcon onClick={handleClick} />
             </IconButton>
+           
+      <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+      >
+        <MenuItem onClick={() => auth.signOut()} >Logout</MenuItem>
+      </Menu>
         </IconContainer>
       </Header>
       <Search>

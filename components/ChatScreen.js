@@ -96,7 +96,7 @@ const ChatScreen = ({ chat, messages }) => {
           <h3>{getRecipientEmail(chat.users, user)}</h3>
           {recipientSnapshot ? (
             <p>
-              Last active:{" "}
+              {/* Last active:{" "} */}
               {recipient?.lastSeen?.toDate() ? (
                 <TimeAgo datetime={recipient?.lastSeen?.toDate()} />
               ) : (
@@ -174,11 +174,15 @@ const HeaderInformation = styled.div`
   flex: 1;
 
   > h3 {
-    margin-bottom: 3px;
+    padding-bottom: 0px;
+    margin:0;
+  padding:0;
   }
   > p {
     font-size: 14px;
     color: gray;
+    margin:0;
+  padding:0;
   }
 `;
 
