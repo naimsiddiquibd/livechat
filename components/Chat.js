@@ -29,9 +29,9 @@ function Chat({ id, users }) {
   return (
   <Container onClick={enterChat}>
     {recipient ? (
-      <UserAvatar src={recipient?.photoURL} />
+      <AvatarPic src={recipient?.photoURL} />
     ) : (
-      <UserAvatar>{recipientEmail[0]}</UserAvatar>
+      <AvatarPic>{recipientEmail[0]}</AvatarPic>
     )}
     <p>{recipientEmail}</p>
   </Container>
@@ -52,7 +52,7 @@ const Container = styled.div`
   }
 `;
 
-const UserAvatar = styled(Avatar)`
+const AvatarPic = styled(Avatar)`
   margin: 5px;
   margin-right: 15px;
 `;
