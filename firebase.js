@@ -11,13 +11,22 @@ import 'firebase/compat/firestore';
 //     appId: "1:329882727757:web:29f7946b58aabfde7c7304"
 //   };
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCngZLpRlqwB4SYwtVYsOLyHveg8ZyM678",
+//   authDomain: "nchat-by-naim.firebaseapp.com",
+//   projectId: "nchat-by-naim",
+//   storageBucket: "nchat-by-naim.appspot.com",
+//   messagingSenderId: "569056254757",
+//   appId: "1:569056254757:web:39ce20b73744d61e1518cc"
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCngZLpRlqwB4SYwtVYsOLyHveg8ZyM678",
-  authDomain: "nchat-by-naim.firebaseapp.com",
-  projectId: "nchat-by-naim",
-  storageBucket: "nchat-by-naim.appspot.com",
-  messagingSenderId: "569056254757",
-  appId: "1:569056254757:web:39ce20b73744d61e1518cc"
+  apiKey: "AIzaSyDt2OPx2hLAT0leodbj4XdxmSWz8Cp5C7k",
+  authDomain: "nchat-live.firebaseapp.com",
+  projectId: "nchat-live",
+  storageBucket: "nchat-live.appspot.com",
+  messagingSenderId: "792674773184",
+  appId: "1:792674773184:web:4a1c92f61f62b84fdfe525"
 };
 
 const app = !firebase.apps.length
