@@ -17,7 +17,7 @@ function Login() {
             <LoginContainer>
               <Logo src=" /logo.png" />
               <Button onClick={signIn} variant="contained">Sign in with Google</Button>
-              <p>Design, Develop & Programmed by <Link href="https://www.naimsiddiqui.me/"><BlueText>Naim Siddiqui</BlueText></Link></p>
+              <p><span className='text-base-200'>Design, Develop & Programmed by</span> <Link href="https://www.naimsiddiqui.me/"><BlueText>Naim Siddiqui</BlueText></Link></p>
               
             </LoginContainer>
     </Container>

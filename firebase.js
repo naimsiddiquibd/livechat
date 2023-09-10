@@ -21,12 +21,12 @@ import 'firebase/compat/firestore';
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDt2OPx2hLAT0leodbj4XdxmSWz8Cp5C7k",
-  authDomain: "nchat-live.firebaseapp.com",
-  projectId: "nchat-live",
-  storageBucket: "nchat-live.appspot.com",
-  messagingSenderId: "792674773184",
-  appId: "1:792674773184:web:4a1c92f61f62b84fdfe525"
+  apiKey: "AIzaSyCHskL2HjJi1S7_f_jjrkh6R4difr9mjgQ",
+  authDomain: "nchat-private.firebaseapp.com",
+  projectId: "nchat-private",
+  storageBucket: "nchat-private.appspot.com",
+  messagingSenderId: "898369717180",
+  appId: "1:898369717180:web:b30c971b6faa6d4bd961b9"
 };
 
 const app = !firebase.apps.length
